@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+
+<body>
+	<h1>자바 스크립트 예제</h1>
+</body>
+
+<script type="text/javascript">
+	/* 변수 선언*/
+
+	/* 변수
+		선언
+	 */
+
+	/* 자료형을 쓰지 않늗다 */
+	console.log("***********변수선언***********");
+	var no = 3;
+	var str;
+	var boo;
+
+	str = "안녕하세요";
+
+	console.log(no); //3
+	console.log(str); //안녕하세요
+
+	console.log(typeof no); //number
+	console.log(typeof str); //string
+
+	console.log(typeof boo); //undefined
+	boo = 3 < 5;
+	console.log(typeof boo); //boolean
+	boo = "황일영";
+	console.log(boo); // 황일영
+	console.log(typeof boo); // string
+
+	var person = "정우성"; //그냥 가장 마지막에 선언해준 값을 갖는다
+	console.log(person); // 정우성
+	var person = "이효리";
+	console.log(person); //이효리		
+	var person = "정우성";
+	var person = "이효리";
+	var person = "유재석";
+	console.log(person); //유재석
+
+	let sum = 0;
+	console.log(sum);//0
+	console.log(0);//0
+	console.log(typeof 0);//
+</script>
+
+<script type="text/javascript">
+/***********undefined와 null 비교***********/
+	var myVar1;
+	var myVar2 = null;
+	console.log(myVar1); //undefined
+	console.log(myVar2); //null
+	
+	console.log("=====================");
+	console.log("aaa" + myVar1 +" bbb"); //aaaundefinedbbb
+	
+	console.log("=====================");
+	var num = 123;
+	console.log("123" == 123); //true
+	console.log("123" === 123); //false
+	
+	console.log(myVar1 == myVar2);
+	console.log(myVar1 === myVar2);
+	
+	console.log("" == false); //true
+	console.log("" == 0); //true
+	console.log(0 == false) //true
+	
+	</script>
