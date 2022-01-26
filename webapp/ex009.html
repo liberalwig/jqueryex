@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바 스크립트 예시</h1>
+
+	<!-- 기명함수/선언적 함수/이름 있는 함수: 기명함수가 위에 기입돼 있든 아래에 있든 페이지가 시작되면 기명함수부터 정의해둠-->
+	<script type="text/javascript">
+		// 정의	
+		function testA() {
+			console.log("testA() 기명함수실행");
+		}
+
+		// 실행
+		testA();
+	</script>
+
+	<script type="text/javascript">
+		// 실행
+		testA();
+	</script>
+
+	<!-- testB는 변수 이름이고 이를 실행할 경우엔 '()'를 쳐줌. 쉽게 말해 함수는 먼저 읽어주고 변수는 익명함수를 넣어놨더라도 먼저 읽지 않음. -->
+	<!-- 익명함수: 변수에 담아서 부를 수 있게 사용함. 함수 실행 빈도가 극도로 낮을 경우, 바로 쓰고 완료할 목적으로-->
+	<script type="text/javascript">
+		var testB = function() {
+			console.log("익명함수실행");
+		}
+
+		//실행
+		testB();
+	</script>
+
+</body>
+
+</html>
