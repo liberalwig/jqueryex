@@ -6,16 +6,41 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
+
 	<ul>
 		<li id="first" class="red">첫번째 아이템입니다.</li>
 		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
 		<li id="third" class="del">세번째아이템입니다.</li>
 		<li><strong>네번째 아이템입니다.</strong></li>
-		
 	</ul>
-	<input id="btn" type="button" VALUE="li요소추가" />
+	<button id="btn" type="button">li태그 추가 버튼</button>
+
 </body>
 
+<!--■실습 ex15
+•버튼을 클릭하여 li 요소를 추가해 보세요. 
+•세번째 요소 클릭시 텍스트를 콘솔창에 출력해 보세요
+•여섯번째 요소 클릭시 텍스트를 콘솔창에 출력해 보세요 -->
+<script type="text/javascript">
+	$("ul").on("click", "li", function() {
+		console.log($(this).text());
+		
+		$(this).text("김옥빈")
+	});
+
+	$("#btn").on("click", function() {
+		$("ul").append("<li id='5'>다섯 번째 아이템입니다.</li>");
+		$("ul").append("<li>여섯 번째 아이템입니다.</li>");
+		$("ul").append("<li>일곱 번째 아이템입니다.</li>");
+	});
+
+	/*
+	 $("li").on("click", function() { //버튼 추가후 생성된 li들은 눌러도 반영이 되지 않는다. 그래서 맨위 함수.
+	 var tag = $(this); // var that = $(this);와 같음
+	 tag.text();
+	 console.log(tag.text());
+	 });
+	 */
+</script>
 
 </html>
