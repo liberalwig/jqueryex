@@ -6,17 +6,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
 	<ul>
 		<li id="first" class="red">첫번째 아이템입니다.</li>
 		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
-		<li id="third" class="del">세번째아이템입니다.</li>
+		<li id="third" class="del">세번째 아이템입니다.</li>
 		<li><strong>네번째 아이템입니다.</strong></li>
-		
 	</ul>
-
 </body>
 
-
+<!--■실습 ex14
+•클릭한 li 엘리먼트의 id 값을 console 에 출력하세요 attr() 이용
+•클릭한 li 엘리면트의 출력값을 변경해보세요 -->
+<script type="text/javascript">
+	$("li").on("click", function() {
+		var tag = $(this);
+		var tagId = tag.attr("id");
+		console.log(tagId);
+	});
+</script>
 
 </html>
